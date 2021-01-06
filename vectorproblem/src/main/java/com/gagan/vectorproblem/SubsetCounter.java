@@ -1,6 +1,8 @@
 package com.gagan.vectorproblem;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Vector;
 
 /**
  * Hello world!
@@ -12,21 +14,21 @@ public class SubsetCounter {
     // Function that return the
     // count of subset such that
     // Math.min(S) + Math.max(S) < K
-    public static int getSubsetCount(int arr[], int K) {
+    public static int getSubsetCount(Vector<Integer> arr, int K) {
 
         // Sorting the array
-        Arrays.sort(arr);
+        Collections.sort(arr);
 
         int left, right;
         left = 0;
-        right = arr.length - 1;
+        right = arr.size() - 1;
 
         // ans stores total number
         // of subsets
         int ans = 0;
 
         while (left <= right) {
-            if (arr[left] + arr[right] <= K) {
+            if (arr.get(left) + arr.get(right) <= K) {
 
                 // Add all posible subsets
                 // between i and j
@@ -45,8 +47,9 @@ public class SubsetCounter {
 
     // Driver code
     public static void main(String[] args) {
-        int arr[] = {2, 4, 5, 7};
+        Integer arr[] = {2, 4, 5, 7};
+        Vector<Integer> list = new Vector<Integer>(Arrays.asList(arr));
         int K =8;
-        System.out.println("Total subsets: " + getSubsetCount(arr, K));
+        System.out.println("Total subsets: " + getSubsetCount(list, K));
     }
 }
