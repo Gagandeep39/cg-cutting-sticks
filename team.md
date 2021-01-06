@@ -14,19 +14,19 @@
 
 - [x] Code
 - [ ] Word doc
-  - [ ] Algorthm
-- [ ] Junit test cases
+  - [x] Algorthm
+- [x] Junit test cases
 - [x] Time complexities
-- [ ] Pictorial images for explanation
+- [x] Pictorial images for explanation
 
 ## Algorithm
 
 1. Enter the cutting points and length of wood
 2. Calculate the starting length and endlind lenth of wood (Initially euqal to length of stick)
-3. if start cutting index is less than last cutting index return 0 else go to next step
+3. if start cutting index is less than last cutting index return 0 else go to next step (Wood cannot be futrther separated)
 4. Calculate current cost ( Diff between end and start length)
 5. Initialize min cost with any large number
-6. Recursively run steps 2-4 to calculate min price for starting and ending part of wood
+6. Recursively run steps above to calculate min price for starting and ending part of wood
 7. Assign calculated price to min cost of step 4
 8. Calculate total cost as current cost (Step 5) + newly added min cost(Step 6)
 
