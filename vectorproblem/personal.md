@@ -17,8 +17,8 @@
 
 - [x] Code
 - [ ] Word doc
-  - [ ] Algorthm
-- [ ] Junit test cases
+  - [x] Algorthm
+- [x] Junit test cases
 - [x] Time complexities
 - [ ] Pictorial images for explanation
 
