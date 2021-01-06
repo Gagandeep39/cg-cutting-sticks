@@ -18,7 +18,8 @@
     "visualstudioexptteam.vscodeintellicode",
     "vscjava.vscode-java-debug",
     "redhat.java",
-    "gabrielbb.vscode-lombok"
+    "gabrielbb.vscode-lombok",
+    "vscjava.vscode-java-pack",
   ],
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
