@@ -1,8 +1,12 @@
-package main.java.cuttingsticks;
+package cuttingsticks;
 
 class CuttingStick {
 
-  private static int getMinCost(int[] arr, int length) {
+  public static int getMinCost(int[] arr, int length) {
+    for (int i : arr) {
+      if (i > length)
+        throw new RuntimeException("Cutting point is larger than stick length");
+    }
     return getMinCost(arr, 0, length, 0, arr.length - 1);
   }
 
@@ -14,8 +18,9 @@ class CuttingStick {
    * @endIdx - Ending index between cutting points
    */
   private static int getMinCost(int[] arr, int startLength, int endLength, int startIdx, int endIdx) {
-    if (startIdx > endIdx)
+    if (startIdx > endIdx) {
       return 0;
+    }
     // Find current Cost - Length of stick
     int currentCost = endLength - startLength;
     // Temp variable -Initialize the additional cost iwth MAX int value
@@ -24,16 +29,17 @@ class CuttingStick {
     for (int i = startIdx; i <= endIdx; i++) {
       int currentMinCost = getMinCost(arr, startLength, arr[i], startIdx, i - 1)
           + getMinCost(arr, arr[i], endLength, i + 1, endIdx);
-      if (currentMinCost < minCost)
+      if (currentMinCost < minCost) {
         minCost = currentMinCost;
+      }
     }
     return currentCost + minCost;
   }
 
   public static void main(String[] args) {
-    int arr[] = { 2, 4, 7 };
-    int length = 10;
+    int arr[] = { 2, 4, 7, 12 };
+    int length = 20;
     int minCost = getMinCost(arr, length);
-    System.out.println("Min Cost -> " + minCost);
+    System.out.println("Min Cost : " + minCost);
   }
 }
