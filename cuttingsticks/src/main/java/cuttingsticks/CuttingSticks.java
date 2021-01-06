@@ -10,17 +10,18 @@ class CuttingStick {
     return getMinCost(arr, 0, length, 0, arr.length - 1);
   }
 
-  /**
-   * @arr - Array
-   * @startLength - starting point of stick
-   * @endLength - End point of stick
-   * @startIdx - Starting index between cutting points
-   * @endIdx - Ending index between cutting points
-   */
+  //******************************************************
+  // * @arr - Array
+  // * ------- Stick length -------
+  // * @startLength - starting point of stick
+  // * @endLength - End point of stick
+  // * ------- Points for which the price is to be calculated -------
+  // * @startIdx - Starting index between cutting points
+  // * @endIdx - Ending index between cutting points
+  // *****************************************************
   private static int getMinCost(int[] arr, int startLength, int endLength, int startIdx, int endIdx) {
-    if (startIdx > endIdx) {
-      return 0;
-    }
+    // Wood cannot be further divided
+    if (startIdx > endIdx) return 0;
     // Find current Cost - Length of stick
     int currentCost = endLength - startLength;
     // Temp variable -Initialize the additional cost iwth MAX int value
@@ -33,6 +34,7 @@ class CuttingStick {
         minCost = currentMinCost;
       }
     }
+    // Return the cost for that wood section
     return currentCost + minCost;
   }
 
