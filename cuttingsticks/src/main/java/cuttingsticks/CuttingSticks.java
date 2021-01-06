@@ -2,8 +2,6 @@ package cuttingsticks;
 
 class CuttingStick {
 
-  private static int counter = 0;
-
   public static int getMinCost(int[] arr, int length) {
     for (int i : arr) {
       if (i > length)
@@ -24,7 +22,6 @@ class CuttingStick {
   private static int getMinCost(int[] arr, int startLength, int endLength, int startIdx, int endIdx) {
     // System.out.println("Stick length: " + startLength + ", " + endLength);
     // System.out.println("Array index: " + startIdx + ", " + endIdx);
-    // counter++;
     // System.out.println("------------");
     // Wood cannot be further divided
     if (startIdx > endIdx) return 0;
@@ -49,6 +46,5 @@ class CuttingStick {
     int length = 10;
     int minCost = getMinCost(arr, length);
     System.out.println("Min Cost : " + minCost);
-    // System.out.println(counter+"");
   }
 }
