@@ -21,23 +21,16 @@
 
 ## Algorithm
 
-1. Enter the cutting points and length of wood
-2. Calculate the starting length and endlind lenth of wood (Initially euqal to length of stick)
-3. if start cutting index is less than last cutting index return 0 else go to next step (Wood cannot be futrther separated)
-4. Calculate current cost ( Diff between end and start length)
-5. Initialize min cost with any large number
-6. Recursively run steps above to calculate min price for starting and ending part of wood
-7. Assign calculated price to min cost of step 4
-8. Calculate total cost as current cost (Step 5) + newly added min cost(Step 6)
+Input: array, stick start length, end length, array start index, arryend index
 
-```java
-for (int i = startIdx; i <= endIdx; i++) {
-  int currentMinCost = getMinCost(arr, startLength, arr[i], startIdx, i - 1)
-      + getMinCost(arr, arr[i], endLength, i + 1, endIdx);
-  if (currentMinCost < minCost)
-    minCost = currentMinCost;
-}
-```
+1. if start index is less than last index return 0 else go to next step (Wood cannot be futrther separated)
+2. Calculate `currCost` based on current length( Diff between end and start length)
+3. Initialize `minCost` with any large number
+4. Recursively call algorigth to calculate min price for starting and ending part of wood for each element of array (Cutting point)
+`int currentMinCost = getMinCost(arr, startLength, arr[i], startIdx, i - 1)`
+5. Compare `currentMinCost` and Assign minimun price to `minCost`
+6. Calculate total cost as `currCost` (Step 3) + newly added `minCost`(Step 5)
+
 
 ## Time complexity
 
