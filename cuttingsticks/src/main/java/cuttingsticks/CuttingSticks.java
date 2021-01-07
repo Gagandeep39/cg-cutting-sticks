@@ -26,6 +26,7 @@ class CuttingStick {
     // Wood cannot be further divided
     if (startIdx > endIdx) return 0;
     // Find current Cost - Length of stick
+    // Will store price for current iteration
     int currentCost = endLength - startLength;
     // Temp variable -Initialize the additional cost iwth MAX int value
     int minCost = Integer.MAX_VALUE;
