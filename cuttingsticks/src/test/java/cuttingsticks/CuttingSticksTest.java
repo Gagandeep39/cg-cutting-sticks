@@ -9,9 +9,9 @@ import org.junit.Test;
  */
 public class CuttingSticksTest {
     /**
-     * Input: { 2, 4, 7 }, 10
-     * Output: 20
-     * Description:  10 + 4 + 6
+    //  * Input: { 2, 4, 7 }, 10
+    //  * Output: 20
+    //  * Description:  10 + 4 + 6
      */
     @Test
     public void ValidData() {
@@ -21,9 +21,9 @@ public class CuttingSticksTest {
     }
 
     /**
-     * Input: { 2, 4, 7, 12 }, 20
-     * Output: 43
-     * Description:  20 (12,8) + 12(7,5) + 7(4,3) + 4(2,2)
+    //  * Input: { 2, 4, 7, 12 }, 20
+    //  * Output: 43
+    //  * Description:  20 (12,8) + 12(7,5) + 7(4,3) + 4(2,2)
      */
     @Test
     public void ValidDataTwo() {
@@ -33,8 +33,8 @@ public class CuttingSticksTest {
     }
 
     /**
-     * Input: { 25, 50, 75 }, 100
-     * Output: 200
+    //  * Input: { 25, 50, 75 }, 100
+    //  * Output: 200
      * Description:  
      */
     @Test
@@ -45,8 +45,8 @@ public class CuttingSticksTest {
     }
 
     /**
-     * Input: { 4, 5, 7, 8 }, 10
-     * Output: 22
+    //  * Input: { 4, 5, 7, 8 }, 10
+    //  * Output: 22
      * Description:  
      */
     @Test
@@ -57,8 +57,8 @@ public class CuttingSticksTest {
     }
 
     /**
-     * Input: { 4, 5, 7, 8 }, 2
-     * Output: Exception
+    //  * Input: { 4, 5, 7, 8 }, 2
+    //  * Output: Exception
      * Description: 
      */
     @Test(expected = RuntimeException.class)

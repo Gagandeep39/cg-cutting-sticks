@@ -14,10 +14,10 @@ public class SubsetCounterTest {
     
 
     /**
-     * Input:: arr[] = {2, 4, 5, 7} K = 8
-     * Output: 5 
-     * Subsets: ([2], [4], [2, 4], [2, 4, 5], [2, 5])
-     * 2+2 <=8, 4+4 <=8, 4+2 <= 8
+    //  * Input:: arr[] = {2, 4, 5, 7} K = 8
+    //  * Output: 5 
+    //  * Subsets: ([2], [4], [2, 4], [2, 4, 5], [2, 5])
+    //  * 2+2 <=8, 4+4 <=8, 4+2 <= 8
      */
     @Test
     public void validOne() {
@@ -27,9 +27,9 @@ public class SubsetCounterTest {
     }
 
     /**
-     * Input:: arr[] = {2, 2, 5, 6} K = 7
-     * Output: 5 
-     * Subsets: ([2], [2], [2, 2], [2, 5], [2, 5], [2, 2, 5])
+    //  * Input:: arr[] = {2, 2, 5, 6} K = 7
+    //  * Output: 5 
+    //  * Subsets: ([2], [2], [2, 2], [2, 5], [2, 5], [2, 2, 5])
      */
     @Test
     public void validTwo() {
@@ -39,8 +39,8 @@ public class SubsetCounterTest {
     }
 
     /**
-     * Input:: arr[] = {2, 4, 2, 5, 7} K = 10
-     * Output: 27
+    //  * Input:: arr[] = {2, 4, 2, 5, 7} K = 10
+    //  * Output: 27
      */
     @Test
     public void validThree() {
