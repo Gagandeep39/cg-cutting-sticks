@@ -13,7 +13,7 @@
 ## Requirement
 
 - [x] Code
-- [ ] Word doc
+- [x] Word doc
   - [x] Algorthm
 - [x] Junit test cases
 - [x] Time complexities
