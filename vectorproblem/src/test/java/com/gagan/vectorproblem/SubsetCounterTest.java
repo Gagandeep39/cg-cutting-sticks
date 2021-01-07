@@ -11,23 +11,36 @@ import org.junit.Test;
  * Unit test for simple App.
  */
 public class SubsetCounterTest {
+    
+
     /**
-     * Rigorous Test :-)
+     * Input:: arr[] = {2, 4, 5, 7} K = 8
+     * Output: 5 
+     * Subsets: ([2], [4], [2, 4], [2, 4, 5], [2, 5])
      */
     @Test
     public void validOne() {
-        Integer arr[] = { 2, 4, 5, 7, 6, 8 };
+        Integer arr[] = { 2, 4, 5, 7 };
         Vector<Integer> list = new Vector<Integer>(Arrays.asList(arr));
-        assertEquals(63, SubsetCounter.getSubsetCount(list, 20));
+        assertEquals(5, SubsetCounter.getSubsetCount(list, 8));
     }
 
+    /**
+     * Input:: arr[] = {2, 2, 5, 6} K = 7
+     * Output: 5 
+     * Subsets: ([2], [2], [2, 2], [2, 5], [2, 5], [2, 2, 5])
+     */
     @Test
     public void validTwo() {
-        Integer arr[] = { 1, 4, 3, 2};
+        Integer arr[] = { 2, 2, 5, 6 };
         Vector<Integer> list = new Vector<Integer>(Arrays.asList(arr));
-        assertEquals(15, SubsetCounter.getSubsetCount(list,8));
+        assertEquals(6, SubsetCounter.getSubsetCount(list, 7));
     }
 
+    /**
+     * Input:: arr[] = {2, 4, 2, 5, 7} K = 10
+     * Output: 27
+     */
     @Test
     public void validThree() {
         Integer arr[] = { 2, 4, 2, 5, 7};
