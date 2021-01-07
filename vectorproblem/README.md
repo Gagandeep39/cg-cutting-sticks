@@ -20,16 +20,19 @@
   - [x] Algorthm
 - [x] Junit test cases
 - [x] Time complexities
-- [X] Pictorial images for explanation
-
-## Complexity
-
-- Time Complexity `O(N * log N)`
-- Auxiliary Space `O(1)`
+<!-- - [X] Pictorial images for explanation -->
 
 ## Word doc
 
 ### Algorithm
+
+
+```text
+nums = [2, 4, 5, 7]
+k = 8
+Output: 5
+Explanation: [2], [4], [2, 4], [2, 4, 5], [2, 5]
+```
 
 1. Sort the input array first.
 2. Now use Two Pointer Technique to count the number of subsets.
@@ -44,11 +47,4 @@
 
 - `O(N*log(N))` time solution, sort the numbers, then two pointer approach - leftIndex is element that must be included, rightIndex is biggest element that can be included in that set.
 
-## Picture
-
-```text
-nums = [2, 4, 5, 7]
-k = 8
-Output: 5
-Explanation: [2], [4], [2, 4], [2, 4, 5], [2, 5]
-```
+<!-- ## Picture -->
