@@ -43,8 +43,12 @@ Explanation: [2], [4], [2, 4], [2, 4, 5], [2, 5]
    Decrement the right pointer by 1.
 5. Repeat the below process until left <= right.
 
+
+## Picture
+
+- ![axscd](flowchart.svg)
+
+
 ## Time Complexity
 
 - `O(N*log(N))` time solution, sort the numbers, then two pointer approach - leftIndex is element that must be included, rightIndex is biggest element that can be included in that set.
-
-<!-- ## Picture -->
