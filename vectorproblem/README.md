@@ -31,8 +31,6 @@
 
 ### Algorithm
 
-- `O(N*log(N))` time solution, sort the numbers, then two pointer approach - leftIndex is element that must be included, rightIndex is biggest element that can be included in that set.
-
 1. Sort the input array first.
 2. Now use Two Pointer Technique to count the number of subsets.
 3. Let take two pointers left and right and set left = 0 and right = N-1.
@@ -41,6 +39,10 @@
    if( arr[left] + arr[right] > K )
    Decrement the right pointer by 1.
 5. Repeat the below process until left <= right.
+
+## Time Complexity
+
+- `O(N*log(N))` time solution, sort the numbers, then two pointer approach - leftIndex is element that must be included, rightIndex is biggest element that can be included in that set.
 
 ## Picture
 
