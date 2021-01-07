@@ -17,6 +17,7 @@ public class SubsetCounterTest {
      * Input:: arr[] = {2, 4, 5, 7} K = 8
      * Output: 5 
      * Subsets: ([2], [4], [2, 4], [2, 4, 5], [2, 5])
+     * 2+2 <=8, 4+4 <=8, 4+2 <= 8
      */
     @Test
     public void validOne() {
