@@ -26,7 +26,6 @@
 
 ### Algorithm
 
-
 ```text
 nums = [2, 4, 5, 7]
 k = 8
@@ -43,11 +42,9 @@ Explanation: [2], [4], [2, 4], [2, 4, 5], [2, 5]
    Decrement the right pointer by 1.
 5. Repeat the below process until left <= right.
 
-
 ## Picture
 
-- ![axscd](flowchart.svg)
-
+- ![axscd](flowchart.png)
 
 ## Time Complexity
 
