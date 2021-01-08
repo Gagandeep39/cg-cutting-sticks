@@ -27,14 +27,13 @@ Input: array, stick start length, end length, array start index, arryend index
 2. Calculate `currCost` based on current length( Diff between end and start length)
 3. Initialize `minCost` with any large number
 4. Recursively call algorigth to calculate min price for starting and ending part of wood for each element of array (Cutting point)
-`int currentMinCost = getMinCost(arr, startLength, arr[i], startIdx, i - 1)`
+   `int currentMinCost = getMinCost(arr, startLength, arr[i], startIdx, i - 1)`
 5. Compare `currentMinCost` and Assign minimun price to `minCost`
 6. Calculate total cost as `currCost` (Step 3) + newly added `minCost`(Step 5)
 
-
 ## Time complexity
 
-- O(3 pow (n-1))
+- O(3 pow n)
   - Each function call its itself tice insie a form loop
 
 ## Pictorial images for explanation
