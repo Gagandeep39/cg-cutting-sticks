@@ -10,7 +10,7 @@ class CuttingStick {
     return getMinCost(arr, 0, length, 0, arr.length - 1);
   }
 
-  //******************************************************
+  // ******************************************************
   // * @arr - Array
   // * ------- Stick length -------
   // * @startLength - starting point of stick
@@ -24,7 +24,8 @@ class CuttingStick {
     // System.out.println("Array index: " + startIdx + ", " + endIdx);
     // System.out.println("------------");
     // Wood cannot be further divided
-    if (startIdx > endIdx) return 0;
+    if (startIdx > endIdx)
+      return 0;
     // Find current Cost - Length of stick
     // Will store price for current iteration
     int currentCost = endLength - startLength;
@@ -43,7 +44,7 @@ class CuttingStick {
   }
 
   public static void main(String[] args) {
-    int arr[] = { 2, 4, 5, 6, 7 };
+    int arr[] = { 2, 4, 7 };
     int length = 10;
     int minCost = getMinCost(arr, length);
     System.out.println("Min Cost : " + minCost);
